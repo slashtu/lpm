@@ -2,43 +2,91 @@
 <html>
 <head>
     <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link rel="stylesheet" type="text/css" href="css/easy-responsive-tabs.css " />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/easy-responsive-tabs.css " />
+    <link media="(max-width: 767px)" rel="stylesheet" href="css/base_max_767.css" />
+    <link media="(min-width: 768px)" rel="stylesheet" href="css/base_min_768.css" />
+    <link media="(min-width: 992px)" rel="stylesheet" href="css/base_min_992.css" />
+    <link media="(min-width: 1200px)" rel="stylesheet" href="css/base_min_1200.css" /> 
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
     <script src="js/easyResponsiveTabs.js"></script>
     <title>Easy Responsive Tabs to Accordion</title>
-    <style type="text/css" rel="stylesheet">
-        body {
-            background: #fff;
-        }
-        #container {
-            width: 940px;
-            margin: 0 auto;
-        }
-        @media only screen and (max-width: 768px) {
-            #container {
-                width: 90%;
-                margin: 0 auto;
-            }
-        }
-    </style>
 </head>
 <body>
-    <div id="container">
-
-        <h1 style="font-size:32px">Easy Responsive Tabs to Accordion (with Nested Tabs)</h1>
-        <hr>
-        <br/>
-        <br/>
-
-        
-
-
-        <h2>Vertical Tab with (Nested Tabs) </h2>
-        <br/>
-        <!--Vertical Tab-->
+    <div class="lpm-page">
+        <header class="lpm-page-header">
+            <div class="lpm-page-header-container container">
+                <div class="lpm-page-header-row row">
+                    <div class="col-md-4 col-sm-12">
+                        <div class="lpm-page-header-logo" itemscope="itemscope" itemtype="http://schema.org/Organization">
+                            <a href="http://linkrecon.com" itemprop="url">
+                                <img class="fl-logo-img" itemscope="" itemtype="http://schema.org/ImageObject" src="img/LPM-Logo-2.png" data-retina="" alt="Liberty Park Music">
+                                <meta itemprop="name" content="Liberty Park Music">
+                            </a>
+                        </div>
+                    </div>
+                    <button type="button" class="lpm-page-nav-toggle-icon navbar-toggle" data-toggle="collapse" data-target=".lpm-page-nav-collapse">
+                            <span><i class="glyphicon glyphicon-menu-hamburger"></i></span>
+                    </button>
+                    <div class="col-md-8 col-sm-12">
+                        <div class="fl-page-nav-wrap">
+                            <nav class="lpm-page-nav" role="navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+                                
+                                <div class="lpm-page-nav-collapse navbar-collapse collapse" aria-expanded="false">
+                                    <ul class="nav navbar-nav navbar-right">
+                                        <li class="">
+                                            <a href="http://linkrecon.com/" style="width: auto;">Home</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="http://linkrecon.com/" style="width: auto;">Learn Piano</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="http://linkrecon.com/" style="width: auto;">Learn Guitar</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="http://linkrecon.com/" style="width: auto;">Blog</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="http://linkrecon.com/" style="width: auto;">Login</a>
+                                        </li>
+                                        <li class="sign-up">
+                                            <a href="#" style="width: auto;">Sign Up</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="lpm-page-content" itemprop="mainContentOfPage">
+            <div class="lpm-content-full container">
+                <div class="row">
+                    <div class="lpm-content col-md-12">
+                        <article>
+                            <div class="lpm-post-content clearfix" itemprop="text">
+                                <div class="lpm-row">
+                                    <div class="lpm-row-content-wrap">
+                                        <div class="lpm-row-content lpm-row-fixed-width">
+                                            <div class="lpm-col-group">
+                                                <div class="lpm-col" style="width:100%">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div id="parentVerticalTab">
             <ul class="resp-tabs-list hor_1">
                 <li>Vertical 1</li>
@@ -65,9 +113,6 @@
                     <p>Tab 3 Container</p>
                 </div>
             </div>
-        </div>
-        <div id="nested-tabInfo2">
-            Selected tab: <span class="tabName"></span>
         </div>
     </div>
 	

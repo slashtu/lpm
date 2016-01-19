@@ -1,0 +1,21 @@
+.lpm-page-nav-toggle-icon {
+    background: transparent;
+    font-size: 22px;
+    line-height: 19px;
+    padding: 6px 8px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: auto;
+    margin: 0;
+}
+
+.lpm-page-header-logo{
+    text-align: left;
+    margin-right: 55px;
+}
+
+/* navigation */
+.lpm-page-nav-collapse ul > li {
+    border-bottom: 1px solid #e6e6e6;
+}

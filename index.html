@@ -9,11 +9,12 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" type="text/css" href="css/easy-responsive-tabs.css " />
-    <link media="(max-width: 767px)" rel="stylesheet" href="css/base_max_767.css" />
-    <link media="(min-width: 768px)" rel="stylesheet" href="css/base_min_768.css" />
-    <link media="(min-width: 992px)" rel="stylesheet" href="css/base_min_992.css" />
-    <link media="(min-width: 1200px)" rel="stylesheet" href="css/base_min_1200.css" /> 
+    <link media="(min-width: 768px)" rel="stylesheet" href="css/base-min-768.css" />
+    <link media="(min-width: 992px)" rel="stylesheet" href="css/base-min-992.css" />
+    <link media="(min-width: 1200px)" rel="stylesheet" href="css/base-min-1200.css" /> 
     <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="sass/main.css" />
+    <!-- <link media="(max-width: 767px)" rel="stylesheet" href="css/base-max-767.css" /> -->
     <script src="js/easyResponsiveTabs.js"></script>
     <title>Easy Responsive Tabs to Accordion</title>
 </head>
@@ -72,10 +73,31 @@
                         <article>
                             <div class="lpm-post-content clearfix" itemprop="text">
                                 <div class="lpm-row">
-                                    <div class="lpm-row-content-wrap">
-                                        <div class="lpm-row-content lpm-row-fixed-width">
-                                            <div class="lpm-col-group">
-                                                <div class="lpm-col" style="width:100%">
+                                    <div class="lpm-row-content">
+                                        <div id="parentVerticalTab" class="clearfix">
+                                            <ul class="lpm-accordion-tabs hor_1">
+                                                <li>Vertical 1</li>
+                                                <li>Vertical 2</li>
+                                                <li>Vertical 3</li>
+                                            </ul>
+                                            <div class="resp-tabs-container hor_1">
+                                                <div>
+                                                    Lorem ipsum dolor sit amet, lerisque commodo. Nam porta cursus lectusconsectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non, volutpat vel tortor. Integer laoreet placerat suscipit. Sed sodales sce. Proin nunc erat, gravida a facilisis quis, ornare id lectus.
+                                                    <br>
+                                                    <br>
+                                                    <p>Tab 1 Container</p>
+                                                </div>
+                                                <div>
+                                                    Lorem consectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non, volutpat vel tortor. Integer laoreet placerat suscipit. Sed sodales scelerisque commodo. Nam porta cursus lectus. Proin nunc erat, gravida a facilisis quis, ornare id lectus. Proin consectetur nibh quis.
+                                                    <br>
+                                                    <br>
+                                                    <p>Tab 2 Container</p>
+                                                </div>
+                                                <div>
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non, volutpat vel tortor. Integer laoreet placerat suscipit. Sed sodales scelerisque commodo. Nam porta cursus lectus. Proin nunc erat, gravida a facilisis quis, ornare id lectus. Proin consectetur nibh quis urna gravida mollis.
+                                                    <br>
+                                                    <br>
+                                                    <p>Tab 3 Container</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -86,36 +108,7 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="parentVerticalTab">
-            <ul class="resp-tabs-list hor_1">
-                <li>Vertical 1</li>
-                <li>Vertical 2</li>
-                <li>Vertical 3</li>
-            </ul>
-            <div class="resp-tabs-container hor_1">
-                <div>
-                    Lorem ipsum dolor sit amet, lerisque commodo. Nam porta cursus lectusconsectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non, volutpat vel tortor. Integer laoreet placerat suscipit. Sed sodales sce. Proin nunc erat, gravida a facilisis quis, ornare id lectus.
-                    <br>
-                    <br>
-                    <p>Tab 1 Container</p>
-                </div>
-                <div>
-                    Lorem consectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non, volutpat vel tortor. Integer laoreet placerat suscipit. Sed sodales scelerisque commodo. Nam porta cursus lectus. Proin nunc erat, gravida a facilisis quis, ornare id lectus. Proin consectetur nibh quis.
-                    <br>
-                    <br>
-                    <p>Tab 2 Container</p>
-                </div>
-                <div>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non, volutpat vel tortor. Integer laoreet placerat suscipit. Sed sodales scelerisque commodo. Nam porta cursus lectus. Proin nunc erat, gravida a facilisis quis, ornare id lectus. Proin consectetur nibh quis urna gravida mollis.
-                    <br>
-                    <br>
-                    <p>Tab 3 Container</p>
-                </div>
-            </div>
-        </div>
-    </div>
-	
+        </div>	
 	<!--Plug-in Initialisation-->
 	<script type="text/javascript">
     $(document).ready(function() {

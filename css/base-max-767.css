@@ -19,3 +19,19 @@
 .lpm-page-nav-collapse ul > li {
     border-bottom: 1px solid #e6e6e6;
 }
+
+/* content */
+.lpm-row-content {
+    margin: 20px;
+}
+
+
+/* accordion tab */
+.lpm-tabs-panel{
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+.lpm-tabs-panel:last-child {
+    border-bottom: none;
+}

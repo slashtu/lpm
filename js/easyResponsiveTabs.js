@@ -11,7 +11,7 @@
                 closed: false,
                 tabidentify: '',
                 activetab_bg: 'white',
-                inactive_bg: 'white',
+                inactive_bg: '#f2f2f2',
                 active_border_color: '#2c3e50',
                 active_content_border_color: '#2c3e50',
                 activate: function () {
@@ -60,7 +60,11 @@
 
                 //Assigning the h2 markup to accordion title
                 var $tabItemh2;
+
                 $respTabs.find('.resp-tab-content.' + options.tabidentify).wrap("<div class='lpm-tabs-panel'></div>").before("<h2 class='resp-accordion " + options.tabidentify + "' role='tab'><span class='pull-right glyphicon glyphicon-plus'></span></h2>");
+
+                // remove first plus icon
+                // $respTabs.find('.pull-right.glyphicon.glyphicon-plus:first').removeClass('glyphicon-plus');
 
                 $respTabs.find('.resp-tab-content.' + options.tabidentify).prev("h2").css({
                     'background-color': options.inactive_bg,

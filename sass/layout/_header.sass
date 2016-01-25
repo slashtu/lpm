@@ -1,8 +1,32 @@
 @import '../helper/_mixin'
 
+.lpm-page-header 
+  border-color: #e6e6e6
+  background-color: #ffffff
+  color: #808080
+
+.lpm-page-header-container
+  padding-bottom: 20px
+  padding-top: 20px
+  padding-left: 0
+  padding-right: 0
 
 .lpm-page-header-logo
   
   @include phone 
     text-align: left
     margin-right: 55px
+
+.lpm-page-header-row 
+
+  @include wide-tablet
+    display: table
+    table-layout: fixed
+    width: 104%
+
+
+.lpm-page-header-row > div
+  @include wide-tablet
+    display: table-cell
+    float: none
+    vertical-align: middle

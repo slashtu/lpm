@@ -6,6 +6,9 @@ body {
   font-weight: 400;
   padding: 0; }
 
+.lpm-heading-color {
+  color: #5fb0ea; }
+
 /* layout */
 .lpm-page {
   -moz-box-shadow: none;
@@ -19,6 +22,9 @@ body {
     .lpm-page {
       width: 1100px; } }
 
+.lpm-page-content {
+  background-color: white; }
+
 .lpm-page-header {
   border-color: #e6e6e6;
   background-color: #ffffff;
@@ -26,14 +32,15 @@ body {
 
 .lpm-page-header-container {
   padding-bottom: 20px;
-  padding-top: 20px;
-  padding-left: 0;
-  padding-right: 0; }
+  padding-top: 20px; }
 
-@media (max-width: 767px) {
-  .lpm-page-header-logo {
-    text-align: left;
-    margin-right: 55px; } }
+.lpm-page-header-logo {
+  text-align: center;
+  padding-bottom: 20px; }
+  @media (max-width: 767px) {
+    .lpm-page-header-logo {
+      text-align: left;
+      margin-right: 55px; } }
 
 @media (min-width: 992px) {
   .lpm-page-header-row {
@@ -52,10 +59,18 @@ body {
 
 .lpm-row-content {
   max-width: 1100px;
-  margin: 40px; }
+  margin: 20px; }
+
+.lpm-post-content .lpm-row:nth-child(even) {
+  background-color: #F9F9F9; }
 
 .lpm-content-full {
   width: auto !important; }
+
+.lpm-separator {
+  border-top: 1px solid #2c3e50;
+  opacity: 1;
+  margin-top: 20px; }
 
 @media (min-width: 992px) {
   .container {
@@ -95,8 +110,11 @@ body {
   background-color: #E84D17 !important; }
 
 /* override bootstrap */
-.navbar-right {
-  margin: 0; }
+@media (min-width: 768px) {
+  .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top; } }
 
 .lpm-page-nav {
   font-family: Helvetica, Verdana, Arial, sans-serif;
@@ -114,12 +132,29 @@ body {
 
 @media (min-width: 768px) {
   .lpm-page-nav-collapse {
+    text-align: center;
     border: none;
     max-height: none;
     padding: 0;
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
     box-shadow: none; } }
+
+.lpm-page-nav-wrap {
+  color: #808080;
+  background-color: #ffffff;
+  border-color: #e6e6e6; }
+  @media (min-width: 768px) {
+    .lpm-page-nav-wrap {
+      border-top: 1px solid #e6e6e6;
+      padding: 0; } }
+  @media (min-width: 992px) {
+    .lpm-page-nav-wrap {
+      color: #808080;
+      background: none;
+      border: none;
+      margin-left: 0;
+      margin-right: 0; } }
 
 /*-----------Vertical tabs----------- */
 ul.lpm-accordion-tabs {
@@ -198,5 +233,15 @@ h2.resp-tab-active {
 @media (max-width: 767px) {
   .resp-accordion-closed {
     display: none !important; } }
+
+.course-main-photo {
+  min-height: 420px;
+  padding-top: 120px;
+  padding-bottom: 140px;
+  background-image: url(../img/469899655_1280.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: scroll;
+  background-size: cover; }
 
 /*# sourceMappingURL=main.css.map */

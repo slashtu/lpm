@@ -8,6 +8,6 @@
 
 $( '.header-nav-menu-item' ).click(
   function() {
-    $( this ).find('.header-nav-sub-menu').toggleClass('open');
+    $( this ).toggleClass('open');
   }
 );

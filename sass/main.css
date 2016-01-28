@@ -6,11 +6,21 @@ body {
   font-weight: 400;
   padding: 0; }
 
-.open {
-  display: block !important; }
-
 .lpm-heading-color {
   color: #5fb0ea; }
+
+.social-icons-container {
+  background-color: #FF551A;
+  height: 43px;
+  min-width: 43px;
+  border-radius: 3px;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell; }
+
+.social-icons {
+  color: white;
+  font-size: 1.5em; }
 
 /* layout */
 .lpm-page {
@@ -103,6 +113,14 @@ body {
   border-color: #273a44;
   background-color: #0f161a;
   color: #ffffff; }
+
+.lpm-footer-icons-row > div {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+@media (max-width: 767px) {
+  .lpm-footer-icons-row {
+    width: 450px; } }
 
 /* component */
 .lpm-btn-sm {

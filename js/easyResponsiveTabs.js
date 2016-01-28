@@ -11,7 +11,7 @@
                 closed: false,
                 tabidentify: '',
                 activetab_bg: 'white',
-                inactive_bg: '#f2f2f2',
+                inactive_bg: '#F9F9F9',
                 active_border_color: '#2c3e50',
                 active_content_border_color: '#2c3e50',
                 activate: function () {

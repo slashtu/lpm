@@ -1,10 +1,16 @@
 body {
   background-color: #f2f2f2;
   color: #6b6b6b;
-  font-family: Helvetica, Verdana, Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
   padding: 0; }
+
+h2 {
+  font-size: 36px; }
+
+h3 {
+  font-size: 24px; }
 
 .lpm-heading-color {
   color: #5fb0ea; }
@@ -84,14 +90,23 @@ body {
   padding: 0px; }
 
 .lpm-row-content {
+  margin-left: auto;
+  margin-right: auto;
   max-width: 1100px;
-  margin: 20px; }
+  margin-top: 20px;
+  margin-bottom: 20px; }
   @media (max-width: 767px) {
     .lpm-row-content {
       margin: 20px; } }
 
-.lpm-post-content .lpm-row:nth-child(even) {
+.lpm-post-content {
   background-color: #F9F9F9; }
+
+.lpm-post-content .lpm-row:first-child {
+  background-color: #F9F9F9 !important; }
+
+.lpm-post-content .lpm-row:nth-child(odd) {
+  background-color: white; }
 
 .lpm-content-full {
   width: auto !important; }
@@ -101,6 +116,10 @@ body {
   opacity: 1;
   margin-top: 20px; }
 
+.lpm-heading {
+  padding: 0 !important;
+  margin: 0 !important; }
+
 @media (min-width: 992px) {
   .container {
     width: 900px; } }
@@ -109,7 +128,8 @@ body {
     width: 1020px; } }
 
 .lpm-row {
-  padding-bottom: 40px; }
+  padding-bottom: 40px;
+  padding-top: 1px; }
 
 .lpm-page-footer-widgets {
   border-top: 1px solid #e6e6e6;
@@ -320,5 +340,11 @@ h2.resp-tab-active {
 
 .lpm-footer-widgets-menu {
   list-style: none; }
+
+.lpm-testimonial-content {
+  border: 1px solid rgba(21, 31, 37, 0.5); }
+
+.lpm-testimonial-text {
+  margin: 20px; }
 
 /*# sourceMappingURL=main.css.map */

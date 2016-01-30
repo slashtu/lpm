@@ -5,13 +5,22 @@
   
 
 .lpm-row-content
+  margin-left: auto
+  margin-right: auto
   max-width: 1100px
-  margin: 20px
+  margin-top: 20px
+  margin-bottom: 20px
   @include phone
     margin: 20px
 
-.lpm-post-content .lpm-row:nth-child(even)
+.lpm-post-content
   background-color: #F9F9F9
+
+.lpm-post-content .lpm-row:first-child
+  background-color: #F9F9F9 !important
+
+.lpm-post-content .lpm-row:nth-child(odd)
+  background-color: white
 
 
 .lpm-content-full
@@ -22,4 +31,7 @@
   opacity: 1
   margin-top: 20px
 
+.lpm-heading
+  padding: 0 !important
+  margin: 0 !important
 
